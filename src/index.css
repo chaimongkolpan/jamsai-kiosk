@@ -105,7 +105,7 @@ body {
   position: absolute;
   top: 40px;
   left: 40px;
-  animation: person1Animation ease 4s infinite;
+  /* animation: person1Animation ease 4s infinite; */
 }
 .person-2 {
   width: 221px;
@@ -113,7 +113,7 @@ body {
   position: absolute;
   bottom: 90px;
   right: 0px;
-  animation: person2Animation ease 4s infinite;
+  /* animation: person2Animation ease 4s infinite; */
 }
 .person-3 {
   width: 231px;
@@ -121,15 +121,15 @@ body {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  animation: person3Animation ease 4s infinite;
+  /* animation: person3Animation ease 4s infinite; */
 }
-.book {
-  width: 110px;
-  height: 110px;
+.quiz {
+  width: 130px;
+  height: 130px;
   position: absolute;
-  top: 60px;
-  right: 25px;
-  animation: bookAnimation ease 4s infinite;
+  top: 100px;
+  right: 120px;
+  /* animation: bookAnimation ease 4s infinite; */
 }
 
 .signin-star-1 {
@@ -227,7 +227,7 @@ body {
   justify-content: center;
 }
 .question-done-card-title {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 500;
   line-height: 1;
   color: #4d4d4d;
@@ -308,7 +308,7 @@ body {
   font-size: 40px;
   font-weight: 500;
   border-radius: 3em;
-  box-shadow: 0 4px 4px 2px #4D4D4D33;
+  box-shadow: 0 4px 4px 2px #4d4d4d33;
 }
 .modal-done-card {
   display: flex;
@@ -343,7 +343,7 @@ body {
   font-size: 40px;
   font-weight: 500;
   border-radius: 3em;
-  box-shadow: 0 4px 4px 4px #4D4D4D33;
+  box-shadow: 0 4px 4px 4px #4d4d4d33;
 }
 /*** END QuestionDone ****/
 #myVideo {
@@ -412,4 +412,63 @@ body {
   bottom: 0;
   right: 0;
   height: 900px;
+}
+
+.reward-1 {
+  margin: 4px;
+  width: 90px;
+  height: 160px;
+  animation: oddReward ease 4s infinite;
+}
+.reward-2 {
+  margin: 4px;
+  width: 90px;
+  height: 160px;
+  animation: evenReward ease 4s infinite;
+}
+.reward-3 {
+  margin: 4px;
+  width: 90px;
+  height: 160px;
+  animation: oddReward ease 4s infinite;
+}
+.reward-4 {
+  margin: 4px;
+  width: 90px;
+  height: 160px;
+  animation: evenReward ease 4s infinite;
+}
+.reward-5 {
+  margin: 4px;
+  width: 90px;
+  height: 160px;
+  animation: oddReward ease 4s infinite;
+}
+
+.reward-container {
+  height: 243px;
+}
+
+@keyframes oddReward {
+  0% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 80px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes evenReward {
+  0% {
+    margin-top: 80px;
+  }
+  50% {
+    margin-top: 00px;
+  }
+  100% {
+    margin-top: 80px;
+  }
 }

@@ -9,7 +9,7 @@ import FirstQuestion from "./pages/FirstQuestion.jsx";
 import Question from "./pages/Question.jsx";
 import QuestionDone from "./pages/QuestionDone.jsx";
 import QuestionWelcome from "./pages/QuestionWelcome.jsx";
-
+import PreloadImage from './components/PreloadImage'
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -65,6 +65,12 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <PreloadImage src="./assets/background/questions_1/11.webp"/>
+    <PreloadImage src="./assets/background/questions_1/111.webp"/>
+    <PreloadImage src="./assets/background/questions_1/112.webp"/>
+    <PreloadImage src="./assets/background/questions_1/12.webp"/>
+    <PreloadImage src="./assets/background/questions_1/121.webp"/>
+    <PreloadImage src="./assets/background/questions_1/13.webp"/>
     {/* <div style={{ backgroundColor: "red", height: "1280px", width: "720px" }}> */}
       <RouterProvider router={router} />
     {/* </div> */}

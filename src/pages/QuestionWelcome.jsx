@@ -6,15 +6,11 @@ import Logo2 from "../assets/logo_2.svg";
 import Logo3 from "../assets/logo_3.svg";
 import Logo4 from "../assets/logo_4.svg";
 import blackFog from "../assets/background/black_fog.png";
-import background1 from "../assets/background/bg_1.png";
 import background1fog from "../assets/background/bg_1_fog.png";
-import background2 from "../assets/background/bg_2.png";
-import background3 from "../assets/background/bg_3.png";
-import background4 from "../assets/background/bg_4.png";
-import bg_1_video from "../assets/background/bg_1_video.mp4";
-import bg_2_video from "../assets/background/bg_2_video.mp4";
-import bg_3_video from "../assets/background/bg_3_video.mp4";
-import bg_4_video from "../assets/background/bg_4_video.mp4";
+import bg_1_video from "../assets/background/enter.mp4";
+import bg_2_video from "../assets/background/withlove .mp4";
+import bg_3_video from "../assets/background/mtl.mp4";
+import bg_4_video from "../assets/background/everY.mp4";
 
 export default function Welcome() {
   const navigate = useNavigate();
@@ -44,7 +40,6 @@ export default function Welcome() {
       textColor: "#E2211C",
       btnColor: "white",
       btnBackgroundColor: "#E2211C",
-      backgroundImage: background3,
     },
     2: {
       logoIcon: Logo4,
@@ -57,7 +52,6 @@ export default function Welcome() {
       textColor: "white",
       btnColor: "#8B4498",
       btnBackgroundColor: "white",
-      backgroundImage: background4,
     },
     3: {
       logoIcon: Logo2,
@@ -73,7 +67,6 @@ export default function Welcome() {
       textColor: "#FF564A",
       btnColor: "white",
       btnBackgroundColor: "#FF564A",
-      backgroundImage: background2,
     },
     4: {
       logoIcon: Logo1,
@@ -88,19 +81,15 @@ export default function Welcome() {
       textColor: "#4D4D4D",
       btnColor: "#F66000",
       btnBackgroundColor: "white",
-      backgroundImage: background1,
     },
   };
   return (
     <>
       <div
         style={{
-          // zIndex: 1,
-          // backgroundImage: `url(${theme[id]?.backgroundImage})`,
           backgroundSize: "cover",
           width: "100vw",
           height: "100vh",
-          // padding: "10%",
           display: "flex",
           flexDirection: "column",
           textAlign: "center",

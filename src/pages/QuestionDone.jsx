@@ -3,22 +3,21 @@ import axios from 'axios';
 import MiniLogo from "../components/MiniLogo";
 import signInPageBackground from "../assets/background/Screen_jamsai_resultGuest.webp";
 import QuestionDoneCard from "../components/QuestionDoneCard";
-import reward1 from "../assets/Reward/Reward1.jpg";
-import reward2 from "../assets/Reward/Reward2.jpg";
-import reward3 from "../assets/Reward/Reward3.jpg";
-import reward4 from "../assets/Reward/Reward4.jpg";
-import reward5 from "../assets/Reward/Reward5.jpg";
-import reward6 from "../assets/Reward/Reward6.jpg";
-import reward7 from "../assets/Reward/Reward7.jpg";
-import reward8 from "../assets/Reward/Reward8.jpg";
-import reward9 from "../assets/Reward/Reward9.jpg";
-import reward10 from "../assets/Reward/Reward10.jpg";
-import reward11 from "../assets/Reward/Reward11.jpg";
-import reward12 from "../assets/Reward/Reward12.jpg";
-import reward13 from "../assets/Reward/Reward13.jpg";
-import reward14 from "../assets/Reward/Reward14.jpg";
-import reward15 from "../assets/Reward/Reward15.jpg";
-import reward16 from "../assets/Reward/Reward16.jpg";
+import reward1 from "../assets/Reward/Reward1.webp";
+import reward2 from "../assets/Reward/Reward2.webp";
+import reward3 from "../assets/Reward/Reward3.webp";
+import reward4 from "../assets/Reward/Reward4.webp";
+import reward5 from "../assets/Reward/Reward5.webp";
+import reward6 from "../assets/Reward/Reward6.webp";
+import reward7 from "../assets/Reward/Reward7.webp";
+import reward8 from "../assets/Reward/Reward8.webp";
+import reward9 from "../assets/Reward/Reward9.webp";
+import reward10 from "../assets/Reward/Reward10.webp";
+import reward11 from "../assets/Reward/Reward11.webp";
+import reward12 from "../assets/Reward/Reward12.webp";
+import reward13 from "../assets/Reward/Reward13.webp";
+import reward14 from "../assets/Reward/Reward14.webp";
+import reward15 from "../assets/Reward/Reward15.webp";
 import rewardQr1 from "../assets/RewardQr/RewardQr1.png";
 import rewardQr2 from "../assets/RewardQr/RewardQr2.png";
 import rewardQr3 from "../assets/RewardQr/RewardQr3.png";
@@ -34,7 +33,6 @@ import rewardQr12 from "../assets/RewardQr/RewardQr12.png";
 import rewardQr13 from "../assets/RewardQr/RewardQr13.png";
 import rewardQr14 from "../assets/RewardQr/RewardQr14.png";
 import rewardQr15 from "../assets/RewardQr/RewardQr15.png";
-import rewardQr16 from "../assets/RewardQr/RewardQr16.png";
 
 export default function QuestionDone({ answers }) {
   const url = import.meta.env.VITE_API_URL ?? 'http://143.198.90.136:3001/';
@@ -83,7 +81,6 @@ export default function QuestionDone({ answers }) {
       case 13: return rewardQr13;
       case 14: return rewardQr14;
       case 15: return rewardQr15;
-      case 16: return rewardQr16;
       default: return rewardQr1;
     }
   }

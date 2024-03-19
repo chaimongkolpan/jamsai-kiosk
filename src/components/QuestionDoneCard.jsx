@@ -1,25 +1,25 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Modal from 'react-modal';
+import Modal from "react-modal";
 import Card from "./Card";
 import Logo from "./Logo";
 import heart from "../assets/heart.svg";
 import qrRegister from "../assets/QrRegister.png";
 import Button from "../components/Button";
 
-Modal.setAppElement('#root');
+Modal.setAppElement("#root");
 const customStyles = {
   content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    width: '80%',
-    marginRight: 'auto',
-    marginLeft: 'auto',
-    transform: 'translate(-50%, -50%)',
-    backgroundColor: 'transparent',
-    border: 'none',
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    width: "80%",
+    marginRight: "auto",
+    marginLeft: "auto",
+    transform: "translate(-50%, -50%)",
+    backgroundColor: "transparent",
+    border: "none",
   },
 };
 export default function QuestionDoneCard(props) {
@@ -34,13 +34,22 @@ export default function QuestionDoneCard(props) {
   }
   return (
     <>
-      <Card width={'100%'} marginTop={'48px'} padding={'48px'}>
+      <Card width={"100%"} marginTop={"48px"} padding={"48px"}>
         <div className="question-done-card">
-          <Logo color="orange" isHideLogo={true} height={"120px"} marginTop={"0"} marginBottom={"24px"} zIndex={0} />
+          <Logo
+            color="orange"
+            isHideLogo={true}
+            height={"120px"}
+            marginTop={"0"}
+            marginBottom={"24px"}
+            zIndex={0}
+          />
           <div className="question-done-card-title">
-            Lorem ipsum dolor sit amet consectetur. tincidunt aliquet sed<br />
+            ขอบคุณที่ร่วมกิจกรรมกับสำนักพิมพ์แจ่มใส
+            <br />
+            เลือก ‘บันทึกรูปภาพ’ เพื่อเข้าสู่หน้าสแกน QR Code
           </div>
-          {(isMember && isShowHeart) && (
+          {isMember && isShowHeart && (
             <div className="heart-added">
               <img className="heart-added-image" src={heart} />
               <div className="heart-added-point">+300</div>
@@ -55,9 +64,7 @@ export default function QuestionDoneCard(props) {
                 <img className="mini-qr-image" src={qrUrl} />
                 <p className="mini-qr-text">Save Image</p>
               </div>
-              <div className="qr-panel-or-text">
-                หรือ
-              </div>
+              <div className="qr-panel-or-text">หรือ</div>
               <div className="mini-qr-panel">
                 <img className="mini-qr-image" src={qrRegister} />
                 <p className="mini-qr-text">Register</p>
@@ -86,10 +93,10 @@ export default function QuestionDoneCard(props) {
         style={customStyles}
         contentLabel=""
       >
-        <Card width={'100%'} marginTop={0} padding={'50px'}>
+        <Card width={"100%"} marginTop={0} padding={"50px"}>
           <div className="modal-done-card">
             <div className="modal-done-card-title">
-              Lorem ipsum dolor sit amet consectetur.<br />Lorem tincidunt aliquet sed
+              สแกน QR Code เพื่อดาวน์โหลดภาพ
             </div>
             <div className="modal-qr-panel">
               <img className="modal-qr-image" src={qrUrl} />

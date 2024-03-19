@@ -10,7 +10,22 @@ import star_3 from "../assets/image/welcomePage/star_3.png";
 import person_1 from "../assets/image/welcomePage/person_1.png";
 import person_2 from "../assets/image/welcomePage/person_2.png";
 import person_3 from "../assets/image/welcomePage/person_3.png";
-import book from "../assets/image/welcomePage/book.png";
+import quiz from "../assets/image/welcomePage/quiz.webp";
+import reward1 from "../assets/Reward/Reward1.webp";
+import reward2 from "../assets/Reward/Reward2.webp";
+import reward3 from "../assets/Reward/Reward3.webp";
+import reward4 from "../assets/Reward/Reward4.webp";
+import reward5 from "../assets/Reward/Reward5.webp";
+import reward6 from "../assets/Reward/Reward6.webp";
+import reward7 from "../assets/Reward/Reward7.webp";
+import reward8 from "../assets/Reward/Reward8.webp";
+import reward9 from "../assets/Reward/Reward9.webp";
+import reward10 from "../assets/Reward/Reward10.webp";
+import reward11 from "../assets/Reward/Reward11.webp";
+import reward12 from "../assets/Reward/Reward12.webp";
+import reward13 from "../assets/Reward/Reward13.webp";
+import reward14 from "../assets/Reward/Reward14.webp";
+import reward15 from "../assets/Reward/Reward15.webp";
 import Button from "../components/Button";
 
 export default function Welcome() {
@@ -24,6 +39,7 @@ export default function Welcome() {
         width: "100vw",
         height: "100vh",
         padding: "10%",
+        paddingTop: "5%",
         display: "flex",
         flexDirection: "column",
         textAlign: "center",
@@ -35,16 +51,17 @@ export default function Welcome() {
       <img className="person-1" src={person_1} />
       <img className="person-2" src={person_2} />
       <img className="person-3" src={person_3} />
-      <img className="book" src={book} />
+      <img className="quiz" src={quiz} />
       <Logo />
       <div
         style={{
-          fontSize: "24px",
+          fontSize: "36px",
           color: "white",
           marginBottom: "3%",
+          lineHeight: "40px",
         }}
       >
-        <span style={{ fontSize: "32px" }}>รู้ไหม?</span>
+        <span style={{ fontSize: "46px", lineHeight: "60px" }}>รู้ไหม?</span>
         <div>คาแรคเตอร์นิยายแบบไหนโดนใจ</div>
         <div>สายอ่านอย่างคุณ!</div>
       </div>
@@ -55,15 +72,13 @@ export default function Welcome() {
           alignItems: "center",
         }}
       >
-        <div
-          style={{
-            width: "75%",
-            height: "15em",
-            backgroundColor: "gray",
-            marginBottom: "3%",
-            borderRadius: "10px",
-          }}
-        ></div>
+        <div className="reward-container flex" style={{ marginTop: "1em" }}>
+          <img className="reward-1" src={reward1} />
+          <img className="reward-2" src={reward2} />
+          <img className="reward-3" src={reward3} />
+          <img className="reward-4" src={reward4} />
+          <img className="reward-5" src={reward5} />
+        </div>
       </div>
       <div
         style={{
@@ -71,7 +86,7 @@ export default function Welcome() {
           justifyContent: "center",
           alignItems: "center",
           height: "7vh",
-          marginBottom: "20%",
+          marginTop: "5%",
         }}
       >
         <Button
